@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/logo.png';
+import logo from '/src/assets/logo.png';
 
 function Header({ city, setCity, onSearch }) {
     const handleSearch = (e) => {
