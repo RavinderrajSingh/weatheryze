@@ -7,7 +7,7 @@ function LeftSide({ currentData, searchedCity }) {
 
       <div className='flex flex-col items-center justify-around w-full'>
       <pre className='text-2xl tracking-wider' >
-        {searchedCity ? searchedCity : (<div>Current Location</div>)}
+        {searchedCity ? searchedCity.toUpperCase() : (<div>Current Location</div>)}
       </pre>
       <pre className='text-2xl tracking-wider bg-white text-black w-[85%] text-center' >
         TODAY
