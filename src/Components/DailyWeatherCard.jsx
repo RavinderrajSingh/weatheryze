@@ -3,7 +3,7 @@ import sun from './assets/sun.png';
 
 function DailyWeatherCard({ time, date, temperatureMax, temperatureMin, uvIndexMax, windSpeed }) {
     return (
-        <div className='flex flex-col p-4 rounded-2xl bg-gray-800 text-white max-w-xs mx-2 md:max-w-sm'>
+        <div className='flex flex-col p-4 rounded-2xl bg-gray-800 text-white max-w-xs mx-2 mb-4 md:max-w-sm md:mb-6'>
             <div className='flex flex-col items-center mb-4'>
                 <div className='text-lg md:text-2xl text-center'>{time}</div>
                 <div className='text-lg md:text-2xl text-center'>{date}</div>

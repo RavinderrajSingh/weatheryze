@@ -50,7 +50,7 @@ function Body({
             searchedCity={searchedCity}
           />
         ) : (
-          <div className='text-center text-xl'>No Weather Data Available</div>
+          <div className='text-center text-xl md:text-2xl'>No Weather Data Available</div>
         )}
       </div>
     </div>
