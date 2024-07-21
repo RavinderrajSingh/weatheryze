@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '/src/assets/logo.png'
 
 function Header({ city, setCity, onSearch }) {
 
@@ -13,7 +14,7 @@ function Header({ city, setCity, onSearch }) {
         <div className='w-full items-center justify-around flex p-2'>
 
             <div className="logo flex items-center justify-center">
-                <img src="/src/assets/logo.png" alt="Logo" className='w-[3rem]' />
+                <img src={logo} alt="Logo" className='w-[3rem]' />
                 <div className='border-r-[1px]  mx-3 h-[2rem] border-gray-500' />
                 <pre className='font-extrabold text-2xl'>WEATHERYZE</pre>
             </div>
