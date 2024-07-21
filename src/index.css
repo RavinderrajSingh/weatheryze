@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  background: #21212a;
+}
