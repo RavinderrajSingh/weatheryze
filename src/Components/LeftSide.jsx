@@ -14,15 +14,15 @@ function LeftSide({ currentData, searchedCity }) {
       </pre>
       </div>
 
-      <div className='flex items-center justify-center text-[80px] font-bold'>
-        <pre className='text-[85px] tracking-widest'> {currentData?.temperature_2m}</pre>
+      <div className='flex items-center justify-center text-[70px] font-bold'>
+        <pre className='text-[70px] tracking-widest'> {currentData?.temperature_2m}</pre>
         <sup>o</sup>
         <pre>C</pre>
       </div>
 
       <div className='flex items-center justify-around w-full'>
 
-        <div className="right flex flex-col items-center justify-center text-xl gap-2">
+        <div className="right flex flex-col items-center justify-center text-[18px] gap-2">
           <pre>Humidity <i class="fa-solid fa-droplet"></i> : {currentData?.relative_humidity_2m} %</pre>
           <pre>Precipitation <i class="fa-solid fa-cloud-sun-rain"></i> : {currentData?.precipitation} mm</pre>
           <pre>Rain <i class="fa-solid fa-cloud-rain"></i> : {currentData?.rain} mm</pre>

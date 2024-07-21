@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { sun } from '/src/assets/logo.png';
+import sun from '/src/assets/sun.png';
 
 function DailyWeatherCard({ time, date, temperatureMax, temperatureMin, uvIndexMax, windSpeed }) {
     return (

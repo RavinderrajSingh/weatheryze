@@ -9,11 +9,11 @@ function DisplayWeatherData({ currentData, dailyData, weatherData, searchedCity 
 
         <div className='w-full h-full flex items-center justify-around'>
 
-            <div className='w-[23%] h-[98%] bg-gray-900 rounded-2xl'>
+            <div className='w-[20%] h-[98%] bg-gray-900 rounded-2xl'>
                 <LeftSide currentData={currentData} searchedCity={searchedCity}  />
             </div>
 
-            <div className='w-[76%] h-[98%] rounded-2xl'>
+            <div className='w-[80%] h-[98%] rounded-2xl'>
                 <RightSide dailyData={dailyData} searchedCity={searchedCity} />
             </div>
 
