@@ -1,24 +1,19 @@
-import React from 'react'
-import LeftSide from './LeftSide'
-import RightSide from './RightSide'
+import React from 'react';
+import LeftSide from './LeftSide';
+import RightSide from './RightSide';
 
 function DisplayWeatherData({ currentData, dailyData, weatherData, searchedCity }) {
-
-    // console.log(dailyData);
     return (
-
-        <div className='w-full h-full flex items-center justify-around'>
-
-            <div className='w-[20%] h-[98%] bg-gray-900 rounded-2xl'>
-                <LeftSide currentData={currentData} searchedCity={searchedCity}  />
+        <div className='w-full flex flex-col md:flex-row items-center justify-between p-4'>
+            <div className='w-full md:w-1/4 bg-gray-900 rounded-2xl mb-4 md:mb-0'>
+                <LeftSide currentData={currentData} searchedCity={searchedCity} />
             </div>
 
-            <div className='w-[80%] h-[98%] rounded-2xl'>
+            <div className='w-full md:w-3/4'>
                 <RightSide dailyData={dailyData} searchedCity={searchedCity} />
             </div>
-
         </div>
-    )
+    );
 }
 
-export default DisplayWeatherData
+export default DisplayWeatherData;

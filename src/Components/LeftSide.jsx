@@ -1,41 +1,27 @@
-import React from 'react'
-
+import React from 'react';
 
 function LeftSide({ currentData, searchedCity }) {
   return (
-    <div className='flex flex-col w-full h-full items-center justify-around p-2'>
+    <div className='flex flex-col items-center p-4'>
+      <div className='text-lg md:text-xl mb-2'>
+        {searchedCity ? searchedCity.toUpperCase() : 'Current Location'}
+      </div>
+      <div className='text-lg md:text-xl mb-4'>TODAY</div>
 
-      <div className='flex flex-col items-center justify-around w-full'>
-      <pre className='text-2xl tracking-wider' >
-        {searchedCity ? searchedCity.toUpperCase() : (<div>Current Location</div>)}
-      </pre>
-      <pre className='text-2xl tracking-wider bg-white text-black w-[85%] text-center' >
-        TODAY
-      </pre>
+      <div className='text-4xl md:text-5xl font-bold mb-4'>
+        {currentData?.temperature_2m}<sup>o</sup>C
       </div>
 
-      <div className='flex items-center justify-center text-[70px] font-bold'>
-        <pre className='text-[70px] tracking-widest'> {currentData?.temperature_2m}</pre>
-        <sup>o</sup>
-        <pre>C</pre>
+      <div className='text-sm md:text-base'>
+        <div>Humidity: {currentData?.relative_humidity_2m}%</div>
+        <div>Precipitation: {currentData?.precipitation} mm</div>
+        <div>Rain: {currentData?.rain} mm</div>
+        <div>Cloud Cover: {currentData?.cloud_cover}%</div>
+        <div>Surface Pressure: {currentData?.surface_pressure} hPa</div>
+        <div>Wind Speed: {currentData?.wind_speed_10m} km/h</div>
       </div>
-
-      <div className='flex items-center justify-around w-full'>
-
-        <div className="right flex flex-col items-center justify-center text-[18px] gap-2">
-          <pre>Humidity <i class="fa-solid fa-droplet"></i> : {currentData?.relative_humidity_2m} %</pre>
-          <pre>Precipitation <i class="fa-solid fa-cloud-sun-rain"></i> : {currentData?.precipitation} mm</pre>
-          <pre>Rain <i class="fa-solid fa-cloud-rain"></i> : {currentData?.rain} mm</pre>
-          <pre>Cloud Cover <i class="fa-solid fa-cloud-sun"></i> : {currentData?.cloud_cover} %</pre>
-          <pre>Surface Pressure <i class="fa-solid fa-toilet"></i> : {currentData?.surface_pressure} hPa</pre>
-          <pre>Wind Speed <i class="fa-solid fa-wind"></i> : {currentData?.wind_speed_10m} km/h</pre>
-        </div>
-
-      </div>
-
-
     </div>
-  )
+  );
 }
 
-export default LeftSide
+export default LeftSide;
