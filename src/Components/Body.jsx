@@ -35,7 +35,7 @@ function Body({
 
   return (
     <div className='flex flex-col items-center min-h-screen w-full'>
-      <div className='flex sticky top-0 w-full'>
+      <div className='flex w-full'>
         <Header city={city} setCity={setCity} onSearch={onSearch} />
       </div>
 
