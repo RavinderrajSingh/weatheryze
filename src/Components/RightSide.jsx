@@ -23,7 +23,7 @@ function RightSide({ dailyData }) {
 
   return (
     <div className='flex flex-wrap justify-center'>
-      {/* {futureData.map((data, index) => (
+      {futureData.map((data, index) => (
         <DailyWeatherCard
           key={index}
           time={data.time}
@@ -33,7 +33,7 @@ function RightSide({ dailyData }) {
           uvIndexMax={data.uvIndexMax}
           windSpeed={data.windSpeed}
         />
-      ))} */}
+      ))}
     </div>
   );
 }
