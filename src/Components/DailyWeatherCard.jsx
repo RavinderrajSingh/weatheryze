@@ -1,6 +1,8 @@
 import React from 'react'
 
-function DailyWeatherCard({ time, date , temperatureMax, temperatureMin, uvIndexMax, windSpeed }) {
+import { sun } from '/src/assets/logo.png';
+
+function DailyWeatherCard({ time, date, temperatureMax, temperatureMin, uvIndexMax, windSpeed }) {
     return (
         <div className='flex flex-col px-2 rounded-2xl h-full items-center justify-around bg-gray-800'>
 
@@ -16,7 +18,7 @@ function DailyWeatherCard({ time, date , temperatureMax, temperatureMin, uvIndex
 
             <div className='flex flex-col gap-3 items-center justify-center'>
                 <div>
-                    <img src="/src/assets/sun.png" alt="" className='w-[4rem]' />
+                    <img src={sun} alt="" className='w-[4rem]' />
                 </div>
 
                 <div>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function LeftSide({ currentData, searchedCity }) {
   return (
     <div className='flex flex-col w-full h-full items-center justify-around p-2'>
