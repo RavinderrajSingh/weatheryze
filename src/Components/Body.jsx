@@ -35,9 +35,7 @@ function Body({
 
   return (
     <div className='flex flex-col items-center min-h-screen w-full'>
-      <div className='flex w-full'>
-        <Header city={city} setCity={setCity} onSearch={onSearch} />
-      </div>
+      <Header city={city} setCity={setCity} onSearch={onSearch} />
 
       <div className="mainSection w-full flex-grow flex items-center justify-center px-4 py-2 md:py-4">
         {weatherLoading ? (
