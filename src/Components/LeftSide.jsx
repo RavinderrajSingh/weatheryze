@@ -13,12 +13,12 @@ function LeftSide({ currentData, searchedCity }) {
       </div>
 
       <div className='text-sm md:text-base'>
-        <div>Humidity: {currentData?.relative_humidity_2m}%</div>
+        <div>Humidity <i class="fa-solid fa-droplet"></i> : {currentData?.relative_humidity_2m}%</div>
         <div>Precipitation: {currentData?.precipitation} mm</div>
-        <div>Rain: {currentData?.rain} mm</div>
-        <div>Cloud Cover: {currentData?.cloud_cover}%</div>
-        <div>Surface Pressure: {currentData?.surface_pressure} hPa</div>
-        <div>Wind Speed: {currentData?.wind_speed_10m} km/h</div>
+        <div>Rain <i class="fa-solid fa-cloud-rain"></i> : {currentData?.rain} mm</div>
+        <div>Cloud Cover <i class="fa-solid fa-cloud-sun"></i> : {currentData?.cloud_cover}%</div>
+        <div>Surface Pressure <i class="fa-solid fa-gauge"></i> : {currentData?.surface_pressure} hPa</div>
+        <div>Wind Speed <i class="fa-thin fa-wind"></i> : {currentData?.wind_speed_10m} km/h</div>
       </div>
     </div>
   );
