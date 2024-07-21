@@ -16,7 +16,7 @@ function Header({ city, setCity, onSearch }) {
             <div className="logo flex items-center justify-center">
                 <img src={logo} alt="Logo" className='w-[3rem]' />
                 <div className='border-r-[1px]  mx-3 h-[2rem] border-gray-500' />
-                <pre className='font-extrabold text-2xl'>WEATHERYZE</pre>
+                <pre className='font-extrabold text-2xl'>WEATHERYZ</pre>
             </div>
 
             <div className='search flex items-center justify-center'>
